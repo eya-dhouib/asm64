@@ -6,7 +6,7 @@ section .text
     global _start
 
 _start:
-    mov rax, 0 ;read
+    mov rax, 0
     mov rdi, 0
     mov rsi, receveur
     mov rdx, 4
@@ -19,11 +19,13 @@ _start:
     mov rdi, 1
     syscall
 _1337:
-    mov rax,1
-    mov rdi,1
-    mov rsi,pointeur
-    mov rdx,5
-    syscall
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, pointeur
+    mov rdx, 5
+    syscall 
+
 
     mov rax, 60
     mov rdi, 0
